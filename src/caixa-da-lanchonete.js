@@ -1,7 +1,10 @@
+import { ProcessamentoPedido } from "./processamento-pedido.js";
+
 class CaixaDaLanchonete {
 
     calcularValorDaCompra(metodoDePagamento, itens) {
-        return "";
+
+        return ProcessamentoPedido.processar(metodoDePagamento, itens)
     }
 
 }
